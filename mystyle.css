@@ -1,0 +1,351 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.container {
+    
+    height: auto;
+    
+  }
+ .navbar 
+ {
+     
+     float: right;
+     margin-top: 2%;
+     font-size: 20px;
+ }
+ .navbar a
+ {
+     padding-left: 1cm;
+
+ }
+
+ @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .menu {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .menu a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color:black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .menu a:hover {
+    background-color:#4CAF50;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #4CAF50;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .menu  {
+  border-bottom: 3px solid black ;
+}
+.row
+{
+    float: left;
+}
+
+
+
+
+/* .grid-container {
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px 9px;
+    grid-template-areas:
+      "Head Head img2 img2"
+      "Head Head img3 img3"
+      ". . . .";
+  }
+  
+  .Head { grid-area: Head;
+    border-bottom: black solid;
+ }
+  
+  .img2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img img text"
+      "img img text";
+    grid-area: img2;
+  }
+  
+  .img { grid-area: img; }
+  
+  .text { grid-area: text; 
+    
+}
+  
+  .img3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img31 img31 text1"
+      "img31 img31 text1";
+    grid-area: img3;
+  }
+  
+  .img31 { grid-area: img31; }
+  
+  .text1 { grid-area: text1; }
+   */
+   .grid-container {
+       padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "page page page page"
+      "page page page page"
+      "page page page page";
+      padding-bottom: 1%;
+     border-bottom: black solid 1px;
+  }
+  
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Main-pic Main-pic snaps"
+      "Main-pic Main-pic snaps";
+    grid-area: page;
+    
+  }
+  
+  .Main-pic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "headtext headtext headtext";
+    grid-area: Main-pic;
+    padding-left: 1%;
+    border-right: solid  black 1px;
+    
+
+  }
+  
+  .headtext { grid-area: headtext; }
+  
+  .snaps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img1 img1 text1"
+      "image2 image2 text2";
+    grid-area: snaps;
+  }
+  
+  .img1 { grid-area: img1; }
+  
+  .text1 { grid-area: text1; }
+  
+  .image2 { grid-area: image2; }
+  
+  .text2 { grid-area: text2; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+  }
+  
+ 
+   .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    padding-top: 2%;
+    border-bottom: black solid 1px;
+    grid-template-areas:
+      "p1 p2 p3 p4"
+      "cover cover cover cover"
+      "cover cover cover cover";
+  }
+  
+  .p1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "e1 e1 e1";
+    grid-area: p1;
+  }
+  
+  .e1 { grid-area: e1; }
+  
+  .p2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "e2 e2 e2";
+    grid-area: p2;
+  }
+  
+  .e2 { grid-area: e2; }
+  
+  .p3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "e3 e3 e3";
+    grid-area: p3;
+  }
+  
+  .e3 { grid-area: e3; }
+  
+  .p4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "e4 e4 e4";
+    grid-area: p4;
+  }
+  
+  .e4 { grid-area: e4; }
+  
+  .cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "football football ."
+      ". ft ft";
+    grid-area: cover;
+  }
+  
+  .football { grid-area: football; }
+  
+  .ft { grid-area: ft; }
+  
+
+  .grid-container2 {
+      border-bottom: black solid 1px;
+      padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "f1 f2 f3 f4"
+      "f5 f6 f7 f8"
+      "f9 f10 f11 f12";
+  }
+  
+  .f1 { grid-area: f1; }
+  
+  .f2 { grid-area: f2; }
+  
+  .f3 { grid-area: f3; }
+  
+  .f4 { grid-area: f4; }
+  
+  .f5 { grid-area: f5; }
+  
+  .f6 { grid-area: f6; }
+  
+  .f7 { grid-area: f7; }
+  
+  .f8 { grid-area: f8; }
+  
+  .f9 { grid-area: f9; }
+  
+  .f10 { grid-area: f10; }
+  
+  .f11 { grid-area: f11; }
+  
+  .f12 { grid-area: f12; }
+  
+
+.footer{
+  background: #000;
+  color: #fff;
+}
+.fab{
+  padding-left: 10px;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    border-bottom: black solid 1px;
+  }
+  
+  .end1 { grid-area: 1 / 1 / 4 / 2; }
+  
+  .end2 { grid-area: 1 / 2 / 4 / 3; }
+  
+  .end3 { grid-area: 1 / 3 / 4 / 4; }
+  
+  .end4 { grid-area: 1 / 4 / 4 / 5; }
+  
+  .i1 { grid-area: 1 / 1 / 3 / 2; }
+  
+  .i2 { grid-area: 1 / 2 / 3 / 3; }
+  
+  .i3 { grid-area: 1 / 3 / 3 / 4; }
+  
+  .i4 { grid-area: 1 / 4 / 3 / 5; }
+  
+  .t1 { grid-area: 3 / 1 / 4 / 2; }
+  
+  .t2 { grid-area: 3 / 2 / 4 / 3; }
+  
+  .t3 { grid-area: 3 / 3 / 4 / 4; }
+  
+  .t4 { grid-area: 3 / 4 / 4 / 5; }
+  
+
+
+  
